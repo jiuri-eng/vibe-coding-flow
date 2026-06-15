@@ -1,0 +1,13 @@
+{
+  "name": "vibetodo",
+  "version": "1.0.0",
+  "description": "VibeTodo — Example project for vibe-coding-flow skill",
+  "private": true,
+  "scripts": {
+    "test": "node tests/run.js",
+    "start": "echo 'Open src/index.html in a browser'"
+  },
+  "devDependencies": {
+    "jsdom": "^25.0.1"
+  }
+}

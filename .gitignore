@@ -1,0 +1,25 @@
+# Vibe Coding Flow — Distribution ignore rules
+# These files are generated at runtime and should NOT be included in zip/distribution
+
+# Node.js
+node_modules/
+package-lock.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker (optional)
+*.log

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VibeTodo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container header-inner">
+        <h1 class="logo">VibeTodo</h1>
+        <p class="task-counter" aria-live="polite">共 0 项，已完成 0 项</p>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+      <div class="container">
+
+        <!-- Input Section -->
+        <form class="input-section" autocomplete="off">
+          <div class="input-wrapper">
+            <input
+              type="text"
+              id="todo-input"
+              class="todo-input"
+              placeholder="添加新任务..."
+              maxlength="200"
+              aria-label="任务标题"
+            >
+            <select id="priority-select" class="priority-select" aria-label="优先级">
+              <option value="high">高</option>
+              <option value="medium" selected>中</option>
+              <option value="low">低</option>
+            </select>
+          </div>
+          <button type="submit" class="add-btn" aria-label="添加任务">＋ 添加</button>
+        </form>
+
+        <!-- Filter Tabs -->
+        <nav class="filter-tabs" role="tablist" aria-label="按优先级筛选">
+          <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">
+            全部 <span class="tab-count">(0)</span>
+          </button>
+          <button class="filter-tab" data-filter="high" role="tab" aria-selected="false">
+            高 <span class="tab-count">(0)</span>
+          </button>
+          <button class="filter-tab" data-filter="medium" role="tab" aria-selected="false">
+            中 <span class="tab-count">(0)</span>
+          </button>
+          <button class="filter-tab" data-filter="low" role="tab" aria-selected="false">
+            低 <span class="tab-count">(0)</span>
+          </button>
+        </nav>
+
+        <!-- Task List -->
+        <ul class="task-list" role="list" aria-label="任务列表"></ul>
+
+        <!-- Empty State -->
+        <div class="empty-state" aria-live="polite">
+          <p class="empty-text">还没有任务，添加一个吧！</p>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
