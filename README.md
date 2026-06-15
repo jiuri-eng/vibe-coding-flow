@@ -290,6 +290,29 @@ example-project-cli/
 
 <br/>
 
+## ☕ 打赏与赞助
+
+如果 `vibe-coding-flow` 在你的项目中派上了用场，或者它的某个模块帮你节省了时间——
+
+一杯咖啡的打赏，就是对我持续维护和迭代的最大鼓励。每一份支持都会被认真对待。
+
+<p align="center">
+  <table>
+  <tr>
+  <td align="center" width="45%">
+    <b>微信支付</b><br/>
+    <img src="assets/wechat-pay.jpg" width="200" alt="微信支付" />
+  </td>
+  <td align="center" width="45%">
+    <b>支付宝</b><br/>
+    <img src="assets/alipay.jpg" width="200" alt="支付宝" />
+  </td>
+  </tr>
+  </table>
+</p>
+
+<br/>
+
 ## 联系方式
 
 - **QQ**：2492656146
